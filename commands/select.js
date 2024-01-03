@@ -24,7 +24,7 @@ module.exports = {
 
             const selectionIndex = getRandomInt(0, optionsTrimmed.length-1);
 
-            interaction.editReply(`The selected option is: \`${optionsTrimmed[selectionIndex]}\``);
+            interaction.editReply(`The selected option is: \`${optionsTrimmed[selectionIndex]}\`!!`);
         } catch (err) {
             console.error(err);
         }
