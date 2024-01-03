@@ -1,0 +1,11 @@
+{
+  "name": "discord-roulette",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "imkimdol <kimdol@proton.me>",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^14.14.1",
+    "glob": "^10.3.10"
+  }
+}
