@@ -2,15 +2,17 @@ FROM node:18-alpine
 
 WORKDIR /bot
 
+RUN yarn global add pm2
+
 COPY package.json ./
 COPY yarn.lock ./
-COPY tsconfig.json ./
-COPY .env ./
-COPY ./src ./src
-
-RUN yarn global add pm2
 RUN yarn install
+
+COPY tsconfig.json ./
+COPY ./src ./src
 RUN yarn run compile
-RUN yarn run deploy
+
+COPY .env ./
+RUN yarn run deploy all
 
 CMD yarn run start-runtime
