@@ -5,15 +5,11 @@
   "author": "imkimdol <kimdol@proton.me>",
   "license": "MIT",
   "dependencies": {
-    "discord.js": "^14.14.1",
-    "dotenv": "^16.3.1",
-    "glob": "^10.3.10"
   },
   "scripts": {
     "compile": "tsc",
     "deploy": "node dist/scripts/deployCommands.js",
-    "start": "pm2 start dist/index.js --log pm2log.txt",
-    "start-runtime": "pm2-runtime dist/index.js"
+    "start": "node dist/index.js"
   },
   "devDependencies": {
     "@tsconfig/node18": "^18.2.2",
