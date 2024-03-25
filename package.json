@@ -7,8 +7,7 @@
   "dependencies": {
     "discord.js": "^14.14.1",
     "dotenv": "^16.4.5",
-    "glob": "^10.3.10",
-    "undici": "^5.28.3"
+    "glob": "^10.3.10"
   },
   "scripts": {
     "compile": "tsc",
@@ -17,8 +16,8 @@
     "start-runtime": "pm2-runtime dist/index.js"
   },
   "devDependencies": {
-    "@tsconfig/node18": "^18.2.2",
-    "@types/node": "^20.11.16",
-    "typescript": "^5.3.3"
+    "@tsconfig/node18": "^18.2.3",
+    "@types/node": "^20.11.30",
+    "typescript": "^5.4.3"
   }
 }
